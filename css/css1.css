@@ -1,0 +1,132 @@
+:root{
+    --primary--color: #2b2a2a;
+    --whitte--color: #fff;
+    --black--color: #000;
+    --text--color: #999999;
+    --border-color:#dbdbdb;
+    --navbar-height:50px;
+    --header-height:120px;
+    --header-btn-search:30px;
+    --header-with-search-height:calc(var(--header-height) - var(--navbar-height));
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: #343434;
+    height: 100%;
+}
+/* Responsive */
+.grid{
+width: 1200px;
+max-width: 100%;
+margin: 0 auto;
+}
+.grid__footer{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 150px;
+    }
+
+.grid__full-with{
+width: 100%;
+
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+/*test*/
+.grid__colum-1{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 8.3334%;
+}
+.grid__colum-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+.grid__colum-3{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+.grid__colum-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: calc(100% - 66.6667%);
+}
+
+.grid__colum-6{
+    
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+}
+.grid__colum-8{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 66.6667%;
+}
+
+.grid__colum-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__colum-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
+}
+.grid__colum-100-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 25%;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-item{
+    list-style: none;
+    margin: 0 16px;
+}
+.pagination-item__link{
+    --height:30px;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+    min-width: 40px;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 2px;
+}
+
+.pagination-item__acctive a{
+    background-color: #6495ed;
+    color: black;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

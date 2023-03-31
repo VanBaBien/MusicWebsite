@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/css1.css">
+    <link rel="stylesheet" href="./css/css2.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid app_music">
+            <div class="grid__row">
+                <div class="grid__colum-4 app_music-playlist">
+                  <div class="menu">
+                    <div class="list_item-tab showingup">
+                        <Span>Play List</Span>
+                    </div>
+                    <div class="list_item-tab">
+                        <Span>Yêu Thích</Span>
+                    </div>
+                    <div class="list_item-tab">
+                        <Span>Danh Sách</Span>
+                    </div>
+                    <div class="line"></div>
+            </div>
+           <div class="menu_content">
+              <div class="playlist showingup tab-content">
+                <div class="song">
+                  <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                  </div>
+                  <div class="body">
+                    <h3 class="title">Music name</h3>
+                    <p class="author">Singer</p>
+                  </div>
+                  <div class="option">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </div>
+                </div>
+                <div class="song">
+                  <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                  </div>
+                  <div class="body">
+                    <h3 class="title">Music name</h3>
+                    <p class="author">Singer</p>
+                  </div>
+                  <div class="option">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </div>
+                </div>
+                <div class="song">
+                  <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                  </div>
+                  <div class="body">
+                    <h3 class="title">Music name</h3>
+                    <p class="author">Singer</p>
+                  </div>
+                  <div class="option">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="favourite tab-content">
+            </div>
+            <div class="playlist tab-content">
+
+            </div>
+           </div>
+        </div>
+            </div>
+                <div class="grid__colum-6">
+                    <div class="player">
+                        <!-- Dashboard -->
+                        <div class="dashboard">
+                          <!-- Header -->
+                          <header>
+                            <h4>Now playing:</h4>
+                            <h2>String 57th & 9th</h2>
+                          </header>
+                      
+                          <!-- CD -->
+                          <div class="cd">
+                            <div class="cd-thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="grid grid__footer">
+            <div class="grid__row"> 
+                <div class="grid__colum-2">
+                  <div class="box-volume">
+                    <i style="position: relative;" class="fa-solid fa-volume-high volume-icon"></i>
+                    <input class="volume" class="volume" type="range" min="0" value="100">
+                  </div>
+                </div>
+                <div class="grid__colum-10">
+                    <div class="control">
+                        <div class="btn btn-repeat active">
+                          <i class="fas fa-redo color"></i>
+                        </div>
+                        <div class="btn btn-prev">
+                          <i class="fas fa-step-backward"></i>
+                        </div>
+                        <div class="btn btn-toggle-play">
+                          <i class="fas fa-pause icon-pause"></i>
+                          <i class="fas fa-play icon-play"></i>
+                        </div>
+                        <div class="btn btn-next">
+                          <i class="fas fa-step-forward"></i>
+                        </div>
+                        <div class="btn btn-random">
+                          <i class="fas fa-random color"></i>
+                        </div>
+                      </div>
+                  
+                      <input id="progress" class="progress-bar" type="range" value="0" step="1" min="0" max="100">
+                      <div class="progres-time">
+                        <div class="progress-time--current"></div>
+                        <div class="progress-time--duration"></div>
+                      </div>
+                      <audio id="audio" src=""></audio>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/js.js"></script>
+
+    <script>
+      var heart = document.querySelector('.heart')
+      heart.onclick = function() {
+        heart.classList.toggle('white')
+      }
+    </script>
+</body>
+</html>
